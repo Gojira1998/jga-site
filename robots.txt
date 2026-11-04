@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gojira1998.github.io/jga-site/sitemap.xml
