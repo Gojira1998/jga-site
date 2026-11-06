@@ -1,0 +1,78 @@
+/* Páginas de serviço. Usa as variáveis e componentes do home.css (grafite, papel, laranja, IBM Plex Sans).
+   Sem eyebrow, sem numeração, sem filete, sem gradiente, sem sombra, sem cartões iguais em grade. */
+.s-hero { display: grid; grid-template-columns: repeat(12, 1fr); column-gap: 24px; align-items: center; padding: clamp(120px, 11vw, 170px) var(--m) 0; }
+.s-hero-txt { grid-column: 1 / span 8; }
+.s-hero h1 { margin: 0; font-size: clamp(40px, 5.4vw, 92px); font-weight: 700; line-height: 1.02; letter-spacing: -.03em; text-wrap: balance; }
+.s-lead { margin: 28px 0; max-width: 44ch; font-size: var(--t2); line-height: 1.4; }
+.s-lado { grid-column: 9 / span 4; }
+.s-lado-quadros { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; align-items: start; }
+.s-lado-quadros .quadro img { aspect-ratio: 1; height: auto; object-fit: cover; }
+.s-lado-lista h2 { margin: 0 0 16px; font-size: var(--t2); font-weight: 700; line-height: 1.25; }
+.beneficios { margin: 0; padding: 0; list-style: none; }
+.beneficios li { padding: 8px 0; font-size: var(--t2); line-height: 1.35; }
+
+.s-sec { padding: clamp(80px, 10vw, 160px) var(--m) 0; }
+.s-sec h2 { margin: 0; font-size: var(--t1); font-weight: 700; line-height: 1.12; letter-spacing: -.015em; }
+.s-grade { display: grid; grid-template-columns: repeat(12, 1fr); column-gap: 24px; align-items: start; }
+.s-grade > h2 { grid-column: 1 / span 4; }
+.s-texto { grid-column: 5 / span 8; }
+.s-papel { background: var(--papel); color: var(--tinta); margin-top: clamp(80px, 10vw, 160px); padding-bottom: clamp(72px, 9vw, 140px); }
+.s-papel .s-texto p { margin: 0 0 22px; font-size: var(--t2); line-height: 1.45; max-width: 46ch; }
+.s-exemplos { margin-top: clamp(56px, 7vw, 104px); }
+.exemplos p b { font-weight: 700; }
+.s-texto p { max-width: 46ch; }
+
+.s-amostras .intro { margin: 14px 0 0; max-width: 58ch; }
+.s-amostras .estilos { margin-top: clamp(32px, 4vw, 56px); }
+.folha-mini { display: flex; flex-wrap: wrap; gap: 8px; margin-top: clamp(32px, 4vw, 56px); }
+.folha-mini.vertical .mini img { height: 184px; }
+.s-amostras .s-texto p { margin: 0 0 20px; font-size: var(--t2); line-height: 1.45; }
+
+.s-outros-cab { grid-column: 1 / span 4; }
+.s-outros-cab p { margin: 12px 0 0; color: var(--luz-suave); font-size: var(--t4); }
+.outros-lista { display: grid; gap: 8px; }
+.outros-lista details { background: #1f1e1c; }
+.outros-lista summary { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 18px 20px; list-style: none; cursor: pointer; transition: background .2s var(--ease); }
+.outros-lista summary::-webkit-details-marker { display: none; }
+.outros-lista summary::after { content: "+"; font-size: 24px; line-height: 1; color: var(--laranja); }
+.outros-lista details[open] summary::after { content: "\2212"; }
+.outros-lista summary:hover { background: #292724; }
+.outros-lista summary > span { display: flex; flex: 1; align-items: baseline; justify-content: space-between; gap: 24px; }
+.o-tit { display: block; font-size: var(--t2); font-weight: 600; line-height: 1.25; }
+.o-tag { display: block; font-size: var(--t4); color: var(--luz-suave); text-align: right; max-width: 26ch; }
+.o-corpo { padding: 0 20px 20px; max-width: 62ch; }
+.o-corpo p { margin: 0 0 12px; font-size: var(--t3); line-height: 1.55; }
+
+@media (max-width: 900px) {
+  .s-hero { display: block; }
+  .s-lado { margin-top: 40px; }
+  .s-grade { display: block; }
+  .s-texto, .s-texto p, .o-corpo { max-width: none; }
+  .s-grade > h2, .s-outros-cab { margin-bottom: 20px; }
+  .s-lado-quadros { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 760px) {
+  .outros-lista summary > span { flex-direction: column; gap: 2px; }
+  .o-tag { text-align: left; max-width: none; }
+  .s-hero h1 { font-size: 8.8vw; }
+  .s-lead { font-size: var(--t3); }
+  .s-hero-txt .botao { align-self: stretch; width: 100%; }
+  .estilo-fila { flex-wrap: wrap; overflow: visible; margin-right: 0; padding-right: 0; }
+  .folha-mini .mini img { height: 104px; } .folha-mini.vertical .mini img { height: 150px; }
+  .s-sec { padding-top: 72px; }
+  .s-papel { margin-top: 72px; }
+}
+
+/* entrada das partes (só transform e opacity; some com prefers-reduced-motion) */
+html.js .s-hero h1 { animation: entra .6s var(--ease) .05s backwards; }
+html.js .s-lead { animation: entra .6s var(--ease) .15s backwards; }
+html.js .s-hero-txt .botao { animation: entra .6s var(--ease) .25s backwards; }
+html.js .s-lado { animation: entra .7s var(--ease) .3s backwards; }
+@media (prefers-reduced-motion: reduce) {
+  html.js .s-hero h1, html.js .s-lead, html.js .s-hero-txt .botao, html.js .s-lado { animation: none; }
+  .outros-lista summary { transition: none; }
+}
+
+/* fechamento: a chamada final logo depois da última seção (a home usa um respiro maior) */
+main > .sec-cta { margin-top: clamp(72px, 9vw, 140px); padding-top: clamp(72px, 9vw, 140px); padding-bottom: clamp(72px, 9vw, 140px); }
+.s-portfolio .intro a { color: var(--luz); text-underline-offset: 4px; text-decoration-color: var(--laranja); }
