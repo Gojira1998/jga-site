@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>4 ferramentas que eu uso pra construir tudo com IA | JGA</title>
+<meta name="description" content="Do 4º ao 1º: humanizer, caveman, hyperframes e o navegador. A nº 1 foi a que criou o mascote do meu perfil.">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:ital,wght@1,500&display=swap">
+<link rel="stylesheet" href="../assets/css/home.css?v=20261107">
+<link rel="stylesheet" href="../assets/css/blog.css?v=20261107">
+</head>
+<body>
+<header class="nav-vidro">
+  <div class="nav-in">
+    <a class="nav-marca" href="../index.html" aria-label="JGA Serviços de I.A, página inicial"><img src="../assets/img/logo-lockup-dark.svg" alt="JGA Serviços de I.A" height="26"></a>
+    <nav aria-label="Principal"><a href="../index.html#servicos">Serviços</a><a href="../index.html#trabalhos">Trabalhos</a><a href="../index.html#mais">Estilos</a><a href="../index.html#processo">Como funciona</a><a href="../blog/index.html">Blog</a><a href="../index.html#faq">Dúvidas</a></nav>
+    <a class="nav-botao" href="https://wa.me/5531990727562?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20JGA%20e%20quero%20uma%20proposta." target="_blank" rel="noopener">Pedir proposta</a>
+  </div>
+</header>
+<main class="blog-main artigo">
+  <a class="voltar" href="index.html">← Blog</a>
+  <span class="etiqueta">Reel · Dica</span>
+  <h1>4 ferramentas que eu uso pra construir tudo com IA</h1>
+  <p class="lead">Eu construo apps, sites e vídeos conversando com o Claude. Estas são as quatro ferramentas que mais aparecem no meu dia a dia, do 4º ao 1º. A nº 1 foi a que me criou.</p>
+  <video controls playsinline preload="metadata" poster="../assets/blog/reel-4-ferramentas.jpg" src="../assets/blog/reel-4-ferramentas.mp4"></video>
+
+  <h2>As quatro, em uma linha</h2>
+  <ul class="resumo">
+    <li><span class="n">4º</span><div><b>humanizer</b><span>Tira o jeito de texto de robô do que o Claude escreve.</span></div></li>
+    <li><span class="n">3º</span><div><b>caveman</b><span>Faz o Claude responder curto e gastar menos do seu limite.</span></div></li>
+    <li><span class="n">2º</span><div><b>hyperframes</b><span>Você pede e o Claude monta o vídeo em código, sem abrir editor.</span></div></li>
+    <li><span class="n">1º</span><div><b>o navegador</b><span>O Claude abre o navegador sozinho e faz a tarefa. Foi assim que o mascote do meu perfil nasceu.</span></div></li>
+  </ul>
+
+  <section class="liberar" id="liberar" aria-labelledby="t-liberar">
+    <h2 id="t-liberar">Libere o brinde: link oficial e como começar com cada uma</h2>
+    <p>Deixe seus dados e o brinde abre aqui mesmo, na hora.</p>
+    <form id="form-lead" data-slug="4-ferramentas" novalidate>
+      <div class="campo"><label for="nome">Seu nome</label><input id="nome" name="nome" type="text" autocomplete="name" required></div>
+      <div class="campo"><label for="whatsapp">WhatsApp (com DDD)</label><input id="whatsapp" name="whatsapp" type="tel" inputmode="tel" autocomplete="tel" placeholder="31 99999-9999" required></div>
+      <div class="campo"><label for="email">E-mail</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+      <div class="armadilha" aria-hidden="true"><label>Não preencha<input name="site_url" type="text" tabindex="-1" autocomplete="off"></label></div>
+      <label class="marcar"><input type="checkbox" name="consentimento" required><span>Aceito receber conteúdo e ofertas da JGA por WhatsApp e e-mail, e concordo com a <a href="../privacidade.html" target="_blank" rel="noopener">política de privacidade</a>. Posso sair quando quiser.</span></label>
+      <label class="marcar"><input type="checkbox" name="mentoria"><span>Quero entrar na lista de espera da mentoria de IA (opcional).</span></label>
+      <p class="erro" id="msg-erro" role="alert"></p>
+      <button class="botao botao-g" type="submit">Liberar meu brinde</button>
+      <p class="pequeno">Seus dados ficam só com a JGA. Não vendemos nem repassamos.</p>
+    </form>
+  </section>
+
+  <div class="brinde" id="brinde" hidden>
+  <h2>Seu brinde: as 4 ferramentas, com o link oficial</h2>
+  <div class="ferramenta">
+    <h3>4º · humanizer</h3>
+    <p>Tira o jeito de texto de robô do que o Claude escreve. Use no fim, com o texto já pronto.</p>
+    <p>Link oficial: <a href="https://github.com/blader/humanizer" target="_blank" rel="noopener">github.com/blader/humanizer</a><br>
+    Para começar: <code>npx skills add blader/humanizer</code></p>
+  </div>
+  <div class="ferramenta">
+    <h3>3º · caveman</h3>
+    <p>Faz o Claude responder curto, sem enrolação, e usar menos texto de resposta. Os autores falam em economia grande de texto; esse número é do projeto e não foi medido por mim. Para voltar ao normal, é só pedir "normal mode".</p>
+    <p>Link oficial: <a href="https://github.com/JuliusBrussee/caveman" target="_blank" rel="noopener">github.com/JuliusBrussee/caveman</a><br>
+    Para começar: siga a instalação do README do projeto.</p>
+  </div>
+  <div class="ferramenta">
+    <h3>2º · hyperframes</h3>
+    <p>Você pede e o Claude monta o vídeo em código, sem abrir editor. Comece com um vídeo curto, de uns 10 segundos, só com texto.</p>
+    <p>Link oficial: <a href="https://github.com/heygen-com/hyperframes" target="_blank" rel="noopener">github.com/heygen-com/hyperframes</a><br>
+    Para começar: <code>npx skills add heygen-com/hyperframes</code></p>
+  </div>
+  <div class="ferramenta">
+    <h3>1º · o navegador (Playwright MCP)</h3>
+    <p>O Claude abre o navegador sozinho, clica, digita e faz a tarefa por você. Foi assim que o mascote do meu perfil nasceu. Comece com uma tarefa simples: "abra tal site e me diga o título".</p>
+    <p>Link oficial: <a href="https://github.com/microsoft/playwright-mcp" target="_blank" rel="noopener">github.com/microsoft/playwright-mcp</a><br>
+    Para começar: siga a instalação do README (há um comando pronto para o Claude Code).</p>
+  </div>
+  <div class="convite">
+    <b>Quer o passo a passo completo?</b> Como eu encadeio essas ferramentas para fazer um vídeo do roteiro ao arquivo final é o que vai na mentoria.
+    <p style="margin:12px 0 0"><a class="botao botao-p" href="https://wa.me/5531990727562?text=Quero%20entrar%20na%20lista%20de%20espera%20da%20mentoria%20de%20IA." target="_blank" rel="noopener">Entrar na lista de espera da mentoria</a></p>
+  </div>
+</div>
+</main>
+<footer class="rodape">
+  <span>JGA Serviços de I.A</span>
+  <nav aria-label="Rodapé"><a href="../index.html#servicos">Serviços</a><a href="../index.html#trabalhos">Trabalhos</a><a href="../blog/index.html">Blog</a><a href="../privacidade.html">Privacidade</a></nav>
+  <span class="rodape-dir">2026</span>
+</footer>
+<script src="../assets/js/leads-config.js?v=20261107"></script>
+<script src="../assets/js/blog.js?v=20261107"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+/* Blog da JGA. Reaproveita as variáveis e o cabeçalho de home.css (grafite, papel, laranja; IBM Plex Sans). */
+.blog-main { max-width: 860px; margin: 0 auto; padding: 120px var(--m) 40px; }
+.blog-cab h1 { font: 700 clamp(30px, 5vw, 46px)/1.12 "IBM Plex Sans", system-ui, sans-serif; margin: 0 0 14px; letter-spacing: -.01em; }
+.blog-cab h1 em { font-family: "IBM Plex Serif", Georgia, serif; font-style: italic; font-weight: 500; color: var(--laranja-claro); }
+.blog-cab p { color: var(--luz-suave); font-size: 19px; margin: 0 0 8px; max-width: 640px; }
+.etiqueta { display: inline-block; font-size: var(--t5); letter-spacing: .06em; text-transform: uppercase; color: var(--laranja-claro); margin-bottom: 14px; }
+
+.lista-posts { display: grid; gap: 18px; margin-top: 36px; }
+.post-card { display: grid; grid-template-columns: 150px 1fr; gap: 22px; padding: 18px; border: 1px solid rgba(246, 245, 243, .14); border-radius: 18px; text-decoration: none; color: inherit; background: rgba(246, 245, 243, .03); transition: border-color .2s var(--ease), transform .2s var(--ease); }
+.post-card:hover { border-color: var(--laranja); transform: translateY(-2px); }
+.post-card img, .post-card video { width: 150px; aspect-ratio: 9 / 16; object-fit: cover; border-radius: 12px; background: #000; display: block; }
+.post-card h2 { font: 600 22px/1.25 "IBM Plex Sans", system-ui, sans-serif; margin: 0 0 8px; }
+.post-card p { margin: 0 0 12px; color: var(--luz-suave); font-size: var(--t4); }
+.post-meta { display: flex; flex-wrap: wrap; gap: 8px 14px; font-size: var(--t5); color: var(--luz-suave); }
+.post-meta b { color: var(--laranja-claro); font-weight: 600; }
+
+.artigo h1 { font: 700 clamp(28px, 4.6vw, 42px)/1.15 "IBM Plex Sans", system-ui, sans-serif; margin: 0 0 14px; letter-spacing: -.01em; }
+.artigo .lead { font-size: 20px; color: var(--luz); margin: 0 0 26px; }
+.artigo h2 { font: 600 24px/1.25 "IBM Plex Sans", system-ui, sans-serif; margin: 38px 0 12px; }
+.artigo p { margin: 0 0 14px; }
+.artigo video { width: min(100%, 340px); aspect-ratio: 9 / 16; border-radius: 16px; background: #000; display: block; margin: 22px 0; }
+.voltar { display: block; color: var(--luz-suave); text-decoration: none; font-size: var(--t4); margin-bottom: 22px; }
+.voltar:hover { color: var(--laranja-claro); }
+
+.resumo { list-style: none; margin: 0 0 8px; padding: 0; display: grid; gap: 12px; }
+.resumo li { display: grid; grid-template-columns: 44px 1fr; gap: 14px; align-items: start; }
+.resumo .n { display: grid; place-items: center; width: 44px; height: 44px; border-radius: 12px; background: var(--laranja); color: var(--tinta); font-weight: 700; }
+.resumo b { display: block; color: var(--luz); font-weight: 600; }
+.resumo span { color: var(--luz-suave); font-size: var(--t4); }
+
+.liberar { margin: 34px 0; padding: 26px; border: 1px solid var(--laranja); border-radius: 20px; background: rgba(229, 120, 27, .07); }
+.liberar h2 { margin-top: 0; }
+.campo { display: grid; gap: 6px; margin-bottom: 14px; }
+.campo label { font-size: var(--t4); font-weight: 500; }
+.campo input[type="text"], .campo input[type="email"], .campo input[type="tel"] { width: 100%; box-sizing: border-box; min-height: 50px; padding: 0 16px; border-radius: 12px; border: 1px solid rgba(246, 245, 243, .25); background: #1d1d1d; color: var(--luz); font: 400 17px "IBM Plex Sans", system-ui, sans-serif; }
+.campo input:focus { outline: 2px solid var(--laranja-claro); outline-offset: 1px; border-color: transparent; }
+.marcar { display: grid; grid-template-columns: 22px 1fr; gap: 12px; align-items: start; margin: 4px 0 12px; font-size: var(--t4); color: var(--luz-suave); }
+.marcar input { width: 20px; height: 20px; margin: 2px 0 0; accent-color: var(--laranja); }
+.marcar a { color: var(--luz); }
+.armadilha { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+.erro { color: #ff9a8a; font-size: var(--t4); min-height: 22px; margin: 6px 0 0; }
+.liberar .botao { align-self: stretch; width: 100%; min-height: 54px; font-size: 17px; border: 0; cursor: pointer; font-family: inherit; }
+.liberar .botao[disabled] { opacity: .6; cursor: wait; }
+.pequeno { font-size: var(--t5); color: var(--luz-suave); margin-top: 12px; }
+
+.brinde { margin: 34px 0; padding: 26px; border-radius: 20px; background: rgba(246, 245, 243, .05); border: 1px solid rgba(246, 245, 243, .18); }
+.brinde[hidden], .liberar[hidden] { display: none; }
+.brinde h2 { margin-top: 0; color: var(--laranja-claro); }
+.ferramenta { padding: 18px 0; border-top: 1px solid rgba(246, 245, 243, .12); }
+.ferramenta:first-of-type { border-top: 0; }
+.ferramenta h3 { font: 600 20px/1.25 "IBM Plex Sans", system-ui, sans-serif; margin: 0 0 6px; }
+.ferramenta p { margin: 0 0 8px; color: var(--luz-suave); font-size: var(--t4); }
+.ferramenta a { color: var(--laranja-claro); }
+.ferramenta code { display: inline-block; margin: 2px 0; padding: 4px 8px; border-radius: 8px; background: #000; color: var(--luz); font-size: 14px; }
+.convite { margin-top: 22px; padding: 18px; border-radius: 14px; background: rgba(229, 120, 27, .12); font-size: var(--t4); }
+.convite b { color: var(--laranja-claro); }
+
+.priv h1 { font: 700 34px/1.2 "IBM Plex Sans", system-ui, sans-serif; margin: 0 0 18px; }
+.priv h2 { font: 600 20px/1.3 "IBM Plex Sans", system-ui, sans-serif; margin: 28px 0 8px; }
+.priv p, .priv li { color: var(--luz); }
+.priv ul { padding-left: 20px; }
+
+@media (max-width: 640px) {
+  .post-card { grid-template-columns: 96px 1fr; gap: 14px; padding: 14px; }
+  .post-card img, .post-card video { width: 96px; }
+  .post-card h2 { font-size: 18px; }
+  .blog-main { padding-top: 100px; }
+}
