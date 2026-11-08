@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>4 ferramentas grátis pra voz, imagem, vídeo e legenda | JGA</title>
+<meta name="description" content="Do 4º ao 1º: Whisper, hyperframes, Flow e AI Studio. As ferramentas por trás da voz, da imagem, do vídeo e da legenda do meu perfil, cada uma com o link oficial.">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:ital,wght@1,500&display=swap">
+<link rel="stylesheet" href="../assets/css/home.css?v=20261107">
+<link rel="stylesheet" href="../assets/css/blog.css?v=20261107">
+</head>
+<body>
+<header class="nav-vidro">
+  <div class="nav-in">
+    <a class="nav-marca" href="../index.html" aria-label="JGA Serviços de I.A, página inicial"><img src="../assets/img/logo-lockup-dark.svg" alt="JGA Serviços de I.A" height="26"></a>
+    <nav aria-label="Principal"><a href="../index.html#servicos">Serviços</a><a href="../index.html#trabalhos">Trabalhos</a><a href="../index.html#mais">Estilos</a><a href="../index.html#processo">Como funciona</a><a href="../blog/index.html">Blog</a><a href="../index.html#faq">Dúvidas</a></nav>
+    <a class="nav-botao" href="https://wa.me/5531990727562?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20JGA%20e%20quero%20uma%20proposta." target="_blank" rel="noopener">Pedir proposta</a>
+  </div>
+</header>
+<main class="blog-main artigo">
+  <a class="voltar" href="index.html">← Blog</a>
+  <span class="etiqueta">Reel · Vitrine</span>
+  <h1>4 ferramentas grátis pra voz, imagem, vídeo e legenda</h1>
+  <p class="lead">A voz, as imagens, o vídeo e a legenda do meu perfil saem destas quatro ferramentas, todas com uma forma de começar sem pagar. Do 4º ao 1º. A nº 1 é a voz que você ouve no reel.</p>
+  <video controls playsinline preload="metadata" poster="../assets/blog/reel-ferramentas-gratis.jpg" src="../assets/blog/reel-ferramentas-gratis.mp4"></video>
+
+  <h2>As quatro, em uma linha</h2>
+  <ul class="resumo">
+    <li><span class="n">4º</span><div><b>Whisper</b><span>Escuta o áudio e escreve a legenda, rodando no seu computador.</span></div></li>
+    <li><span class="n">3º</span><div><b>hyperframes</b><span>Você descreve e o vídeo nasce em código, sem abrir editor.</span></div></li>
+    <li><span class="n">2º</span><div><b>Flow</b><span>Cria as imagens, como o mascote do meu perfil. É do Google.</span></div></li>
+    <li><span class="n">1º</span><div><b>AI Studio</b><span>Transforma texto em voz. É a voz que fala no reel. Também é do Google.</span></div></li>
+  </ul>
+
+  <section class="liberar" id="liberar" aria-labelledby="t-liberar">
+    <h2 id="t-liberar">Libere o brinde: link oficial e como começar com cada uma</h2>
+    <p>Deixe seus dados e o brinde abre aqui mesmo, na hora.</p>
+    <form id="form-lead" data-slug="ferramentas-gratis" novalidate>
+      <div class="campo"><label for="nome">Seu nome</label><input id="nome" name="nome" type="text" autocomplete="name" required></div>
+      <div class="campo"><label for="whatsapp">WhatsApp (com DDD)</label><input id="whatsapp" name="whatsapp" type="tel" inputmode="tel" autocomplete="tel" placeholder="31 99999-9999" required></div>
+      <div class="campo"><label for="email">E-mail</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+      <div class="armadilha" aria-hidden="true"><label>Não preencha<input name="site_url" type="text" tabindex="-1" autocomplete="off"></label></div>
+      <label class="marcar"><input type="checkbox" name="consentimento" required><span>Aceito receber conteúdo e ofertas da JGA por WhatsApp e e-mail, e concordo com a <a href="../privacidade.html" target="_blank" rel="noopener">política de privacidade</a>. Posso sair quando quiser.</span></label>
+      <label class="marcar"><input type="checkbox" name="mentoria"><span>Quero entrar na lista de espera da mentoria de IA (opcional).</span></label>
+      <p class="erro" id="msg-erro" role="alert"></p>
+      <button class="botao botao-g" type="submit">Liberar meu brinde</button>
+      <p class="pequeno">Seus dados ficam só com a JGA. Não vendemos nem repassamos.</p>
+    </form>
+  </section>
+
+  <div class="brinde" id="brinde" hidden>
+  <h2>Seu brinde: as 4 ferramentas grátis, com o link oficial</h2>
+  <div class="ferramenta">
+    <h3>4º · Whisper</h3>
+    <p>Reconhece a fala e escreve o texto com o tempo de cada palavra, que é a base da legenda animada. Roda no seu computador, sem enviar o áudio para a internet. Eu uso a versão faster-whisper, que é uma reimplementação mais rápida do mesmo modelo.</p>
+    <p>Link oficial: <a href="https://github.com/openai/whisper" target="_blank" rel="noopener">github.com/openai/whisper</a><br>
+    Versão mais rápida: <a href="https://github.com/SYSTRAN/faster-whisper" target="_blank" rel="noopener">github.com/SYSTRAN/faster-whisper</a><br>
+    Para começar: siga a instalação do README. Dica: use o modelo pequeno primeiro, é leve e já funciona bem.</p>
+  </div>
+  <div class="ferramenta">
+    <h3>3º · hyperframes</h3>
+    <p>Você pede e o Claude monta o vídeo em código, sem abrir editor. Comece com um vídeo curto, de uns 10 segundos, só com texto. O Claude é um serviço à parte, com plano próprio; o hyperframes é a ferramenta que renderiza o vídeo.</p>
+    <p>Link oficial: <a href="https://github.com/heygen-com/hyperframes" target="_blank" rel="noopener">github.com/heygen-com/hyperframes</a><br>
+    Para começar: <code>npx skills add heygen-com/hyperframes</code></p>
+  </div>
+  <div class="ferramenta">
+    <h3>2º · Flow, do Google</h3>
+    <p>Cria imagens a partir de texto. O mascote do meu perfil foi feito aqui. Comece descrevendo um personagem simples e peça sem texto na imagem, porque a ferramenta às vezes escreve palavras sozinha.</p>
+    <p>Link oficial: <a href="https://labs.google/fx/tools/flow" target="_blank" rel="noopener">labs.google/fx/tools/flow</a><br>
+    Atenção: o plano grátis tem limite de créditos, e as regras mudam com o tempo. Confira na página oficial antes de contar com isso.</p>
+  </div>
+  <div class="ferramenta">
+    <h3>1º · AI Studio, do Google</h3>
+    <p>Transforma texto em voz. É a voz que fala no reel. Cole o texto, escolha a voz e gere. Escreva os números por extenso para a voz ler certo.</p>
+    <p>Link oficial: <a href="https://aistudio.google.com" target="_blank" rel="noopener">aistudio.google.com</a><br>
+    Atenção: o uso do AI Studio é grátis, mas a voz tem limite de uso por dia, e no plano grátis o Google pode usar o que você envia para melhorar os produtos dele. Não coloque dado sigiloso.</p>
+  </div>
+  <p class="pequeno">Resumo honesto: estas quatro têm um jeito de começar sem pagar, com limites. O Claude, que eu uso para juntar tudo, tem plano próprio.</p>
+</div>
+</main>
+<footer class="rodape">
+  <span>JGA Serviços de I.A</span>
+  <nav aria-label="Rodapé"><a href="../index.html#servicos">Serviços</a><a href="../index.html#trabalhos">Trabalhos</a><a href="../blog/index.html">Blog</a><a href="../privacidade.html">Privacidade</a></nav>
+  <span class="rodape-dir">2026</span>
+</footer>
+<script src="../assets/js/leads-config.js?v=20261107"></script>
+<script src="../assets/js/blog.js?v=20261107"></script>
+</body>
+</html>
